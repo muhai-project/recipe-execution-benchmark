@@ -1,0 +1,44 @@
+<recipe>
+    <id>chocolate-fudge-cookies</id>
+    <title>Chocolate Fudge Cookies</title>
+    <ingredients>
+        <ingredient>                        
+            500 grams package devil's food cake mix                        
+        </ingredient>
+        <ingredient>                        
+            2 eggs                        
+        </ingredient>
+        <ingredient>                        
+            125 ml vegetable oil                        
+        </ingredient>
+        <ingredient>                        
+            160 grams semi-sweet chocolate chips                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Preheat oven to 175 degrees C.                         
+        </instruction>
+        <instruction>                        
+            Grease cookie sheets.                        
+        </instruction>
+        <instruction>                        
+            In a medium bowl, stir together the cake mix, eggs and oil until well blended.                         
+        </instruction>
+        <instruction>                        
+            Fold in the chocolate chips.                        
+        </instruction>
+        <instruction>                        
+            Roll the dough into walnut sized balls (around 20 g).                          
+        </instruction>
+        <instruction>                        
+            Place the cookies 5 cm apart on the cookie sheet.                        
+        </instruction>
+        <instruction>                        
+            Bake for 8 minutes in the preheated oven.                         
+        </instruction>
+        <instruction>                        
+            Allow cookies to cool on baking sheet for 5 minutes before removing to a wire rack to cool completely.                        
+        </instruction>
+    </instructions>
+</recipe>

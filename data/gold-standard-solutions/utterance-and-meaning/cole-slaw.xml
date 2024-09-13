@@ -1,0 +1,148 @@
+<recipe>
+    <id>cole-slaw</id>
+    <title>Cole Slaw</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                1 head green cabbage
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen)
+                (fetch-and-proportion ?proportioned-cabbage ?ks-with-cabbage ?kitchen ?target-container-1 green-cabbage 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                2 carrots, thinly shredded
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-carrots ?ks-with-carrots ?ks-with-cabbage ?target-container-2 carrot 2 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 onion
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-carrots ?target-container-3 onion 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 green pepper
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-green-pepper ?ks-with-green-pepper ?ks-with-onion ?target-container-4 green-chili-pepper 2 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                200 g sugar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-green-pepper ?target-container-5 white-sugar 200 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                230 g cider vinegar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-vinegar ?ks-with-vinegar ?ks-with-sugar ?target-container-6 cider-vinegar 230 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tsp. salt
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-salt ?ks-with-salt ?ks-with-vinegar ?target-container-7 salt 1 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tablespoon grated horseradish
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-horseradish ?ks-with-horseradish ?ks-with-salt ?target-container-8 grated-horseradish 1 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tsp. mustard seed
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-mustard-seed ?ks-with-mustard-seed ?ks-with-horseradish ?target-container-10 mustard-seed 1 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tsp. celery seed
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-celery-seed ?ks-with-celery-seed ?ks-with-mustard-seed ?target-container-11 celery-seed 1 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tsp. turmeric
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-turmeric ?ks-with-turmeric ?ks-with-celery-seed ?target-container-12 turmeric-powder 1 teaspoon)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Shred the cabbage and carrots together, then chop them up a bit.
+            </utterance>
+            <meaning>
+                (cut ?shredded-cabbage ?ks-with-shredded-cabbage ?ks-with-turmeric ?proportioned-cabbage shredded ?knife ?cutting-board-1)
+                (cut ?shredded-carrots ?ks-with-shredded-carrots ?ks-with-shredded-cabbage ?proportioned-carrots shredded ?knife ?cutting-board-1)
+                (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-shredded-carrots ?empty-container ?shredded-cabbage ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?shredded-carrots ?quantity-b ?unit-b)
+                (mingle ?cabbage-mix ?ks-with-cabbage-mix ?output-ks-b ?output-container-b ?wooden-spoon)
+                (cut ?chopped-cabbage-mix ?ks-with-chopped-cabbage-mix ?ks-with-cabbage-mix ?cabbage-mix chopped ?knife ?cutting-board-1)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Chop the green pepper and onion and combine it with the cabbage. 
+            </utterance>
+            <meaning>
+                (cut ?chopped-green-pepper ?ks-with-chopped-green-pepper ?ks-with-chopped-cabbage-mix ?proportioned-green-pepper chopped ?knife ?cutting-board-1)
+                (peel ?peeled-onion ?peelings ?ks-with-peeled-onion ?ks-with-chopped-green-pepper ?proportioned-onion ?knife)
+                (cut ?chopped-onion ?ks-with-chopped-onion ?ks-with-peeled-onion ?peeled-onion chopped ?knife ?cutting-board-5)
+                (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?ks-with-chopped-onion ?chopped-cabbage-mix ?chopped-green-pepper ?quantity-c ?unit-c)
+                (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?chopped-onion ?quantity-d ?unit-d)
+                (mingle ?slaw ?ks-with-slaw ?output-ks-d ?output-container-d ?wooden-spoon)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Boil together the vinegar, sugar, salt, and spices. 
+            </utterance>
+            <meaning>
+                (fetch ?cooking-pot ?ks-with-cooking-pot ?ks-with-slaw cooking-pot 1)
+                (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?ks-with-cooking-pot ?cooking-pot ?proportioned-vinegar ?quantity-e ?unit-e)
+                (transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?proportioned-sugar ?quantity-f ?unit-f)
+                (transfer-contents ?output-container-g ?rest-g ?output-ks-g ?output-ks-f ?output-container-f ?proportioned-salt ?quantity-g ?unit-g)
+                (transfer-contents ?output-container-h ?rest-h ?output-ks-h ?output-ks-g ?output-container-g ?proportioned-horseradish ?quantity-h ?unit-h)
+                (transfer-contents ?output-container-i ?rest-i ?output-ks-i ?output-ks-h ?output-container-h ?proportioned-mustard-seed ?quantity-i ?unit-i)
+                (transfer-contents ?output-container-j ?rest-j ?output-ks-j ?output-ks-i ?output-container-i ?proportioned-celery-seed ?quantity-j ?unit-j)
+                (transfer-contents ?output-container-k ?rest-k ?output-ks-k ?output-ks-j ?output-container-j ?proportioned-turmeric ?quantity-k ?unit-k)
+                (boil ?dressing ?ks-with-dressing ?output-ks-k ?output-container-k ?stove ?heating-mode ?boiling-time-qty ?boiling-time-unit)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Pour over the slaw and allow it to set in the refrigerator for two hours before serving.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-l ?rest-l ?output-ks-l ?ks-with-dressing ?slaw ?dressing ?quantity-l ?unit-l)
+                (refrigerate ?cole-slaw ?ks-with-cole-slaw ?output-ks-l ?output-container-l ?fridge ?cooling-quantity ?cooling-unit)
+            </meaning>
+        </instruction>
+    </instructions>
+</recipe>

@@ -1,0 +1,123 @@
+#croutons-vinegar-salad
+
+; INITIALIZATION: always start with get-kitchen
+(get-kitchen ?kitchen)
+
+;; "4 slices white bread"
+(fetch-and-proportion ?proportioned-bread ?ks-with-bread ?kitchen ?target-container-1 white-bread-slice 1 piece)
+
+;; "2 tablespoons extra-virgin olive oil"
+(fetch-and-proportion ?proportioned-olive-oil-tbsp ?ks-with-olive-oil-tbsp ?ks-with-bread ?target-container-2 extra-virgin-olive-oil 2 tablespoon)
+
+;; "1/4 teaspoon dried dill"
+(fetch-and-proportion ?proportioned-dill ?ks-with-dried-dill ?ks-with-olive-oil-tbsp ?target-container-3 dried-dill-weed 0.25 teaspoon)
+
+;; "1/4 teaspoon garlic powder"
+(fetch-and-proportion ?proportioned-garlic ?ks-with-garlic ?ks-with-dried-dill ?target-container-4 garlic-powder 0.25 teaspoon)
+
+;; "225 grams romaine lettuce leaves"
+(fetch-and-proportion ?proportioned-lettuce ?ks-with-lettuce ?ks-with-garlic ?target-container-6 romaine-lettuce 225 g)
+
+;; "115 grams mixed greens"
+(fetch-and-proportion ?proportioned-greens ?ks-with-greens ?ks-with-lettuce ?target-container-7 mixed-greens 115 g)
+
+;; "115 grams cherry tomatoes, sliced"
+(fetch-and-proportion ?proportioned-cherry-tomato ?ks-with-cherry-tomato ?ks-with-greens ?target-container-8 cherry-tomato 115 g)
+(cut ?sliced-tomato ?ks-with-sliced-tomato ?ks-with-cherry-tomato ?proportioned-cherry-tomato slices ?knife)
+
+;; "5 radishes, sliced"
+(fetch-and-proportion ?proportioned-radish ?ks-with-radish ?ks-with-sliced-tomato ?target-container-9 radish 5 piece)
+; EFFICIENCY: Reuse tools
+(cut ?sliced-radish ?ks-with-sliced-radish ?ks-with-radish ?proportioned-radish slices ?knife)
+
+;; "1 red onion, thinly sliced"
+(fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-sliced-radish ?target-container-10 red-onion 1 piece)
+; EFFICIENCY: Reuse tools
+(cut ?sliced-onion ?ks-with-sliced-onion ?ks-with-onion ?proportioned-onion fine-slices ?knife)
+
+;; "1 carrot, shredded"
+(fetch-and-proportion ?proportioned-carrot ?ks-with-carrot ?ks-with-sliced-onion ?target-container-11 carrot 1 piece)
+; EFFICIENCY: Reuse tools
+(cut ?shredded-carrot ?ks-with-shredded-carrot ?ks-with-carrot ?proportioned-carrot shredded ?knife)
+
+;; "250 ml extra-virgin olive oil"
+(fetch-and-proportion ?proportioned-olive-oil-ml ?ks-with-olive-oil-ml ?ks-with-shredded-carrot ?target-container-14 extra-virgin-olive-oil 250 ml)
+
+;; "6 tablespoons red wine vinegar"
+(fetch-and-proportion ?proportioned-vinegar ?ks-with-vinegar ?ks-with-olive-oil-ml ?target-container-15 red-wine-vinegar 6 tablespoon)
+
+;; "1 1/2 teaspoons sugar"
+(fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-vinegar ?target-container-16 white-sugar 1.5 teaspoon)
+
+;; "Gather the ingredients."
+; REPETITION: Explicitly mentioned to gather the ingredients, which is already implied by the presence of the ingredients list
+
+;; "Heat the oven to 190 C."
+(preheat-oven ?heated-oven ?ks-with-heated-oven ?ks-with-sugar ?oven 190 degrees-celsius)
+
+;; "Cut the bread into 2-cm cubes and put in a large bowl."
+; EFFICIENCY: Reuse tools
+(cut ?bread-cubes ?ks-with-bread-cubes ?ks-with-heated-oven ?proportioned-bread two-cm-cubes ?knife)
+; IMPLICIT: fetch a large bowl
+(fetch ?large-bowl-1 ?ks-with-large-bowl-1 ?ks-with-bread-cubes large-bowl 1)
+(transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl-1 ?large-bowl-1 ?bread-cubes ?quantity-a ?unit-a)
+
+;; "Drizzle with 2 tablespoons extra-virgin olive oil and sprinkle with the dill; toss to coat."
+(transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?proportioned-olive-oil-tbsp ?quantity-b ?unit-b)
+(sprinkle ?bread-with-sprinkled-dill ?ks-with-sprinkled-dill ?output-ks-b ?output-container-b ?proportioned-dill)
+(mingle ?sprinkled-bread ?ks-with-sprinkled-bread ?ks-with-sprinkled-dill ?bread-with-sprinkled-dill ?mingling-tool)
+
+;; "Spread the bread cubes out on a rimmed baking sheet and sprinkle lightly with the garlic powder."
+; IMPLICIT: fetch a baking tray
+(fetch ?baking-tray ?ks-with-baking-tray ?ks-with-sprinkled-bread baking-tray 1)
+(transfer-contents ?output-container-d ?rest-d ?output-ks-d ?ks-with-baking-tray ?baking-tray ?sprinkled-bread ?quantity-d ?unit-d)
+(sprinkle ?bread-with-garlic ?ks-with-sprinkled-garlic ?output-ks-d ?output-container-d ?proportioned-garlic)
+
+;; "Bake for about 12 minutes."
+(bake ?baked-croutons ?ks-with-baked-croutons ?ks-with-sprinkled-garlic ?bread-with-garlic ?oven 12 minute ?baking-temp-qty ?baking-temp-unit)
+
+;; "In a large bowl, combine the romaine lettuce, mixed greens, tomatoes, radishes, onion, and carrot."
+; IMPLICIT: fetch a large bowl
+(fetch ?large-bowl-2 ?ks-with-large-bowl-2 ?ks-with-baked-croutons large-bowl 1)
+(transfer-contents ?output-container-e ?rest-e ?output-ks-e ?ks-with-large-bowl-2 ?large-bowl-2 ?proportioned-lettuce ?quantity-e ?unit-e)
+(transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?proportioned-greens ?quantity-f ?unit-f)
+(transfer-contents ?output-container-g ?rest-g ?output-ks-g ?output-ks-f ?output-container-f ?sliced-tomato ?quantity-g ?unit-g)
+(transfer-contents ?output-container-h ?rest-h ?output-ks-h ?output-ks-g ?output-container-g ?sliced-radish ?quantity-h ?unit-h)
+(transfer-contents ?output-container-i ?rest-i ?output-ks-i ?output-ks-h ?output-container-h ?sliced-onion ?quantity-i ?unit-i)
+(transfer-contents ?output-container-j ?rest-j ?output-ks-j ?output-ks-i ?output-container-i ?shredded-carrot ?quantity-j ?unit-j)
+
+;; "Toss well."
+; EFFICIENCY: Reuse tools
+(mingle ?veggies-mix ?ks-with-veggies-mix ?output-ks-j ?output-container-j ?mingling-tool)
+
+;; "Cover and refrigerate until serving time."
+(cover ?covered-salad ?ks-with-covered-salad ?ks-with-veggies-mix ?veggies-mix ?plastic-wrap)
+(refrigerate ?cooled-salad ?ks-with-cooled-salad ?ks-with-covered-salad ?covered-salad ?fridge ?cooling-quantity ?cooling-unit)
+
+;; "In a jar with a screw-on lid, combine the extra-virgin olive oil, red wine vinegar, and sugar."
+; IMPLICIT: fetch the jar and its lid
+(fetch ?jar ?ks-with-fetched-jar ?ks-with-cooled-salad jar 1)
+(fetch ?jar-lid ?ks-with-fetched-jar-lid ?ks-with-fetched-jar jar-lid 1)
+(transfer-contents ?output-container-m ?rest-m ?output-ks-m ?ks-with-fetched-jar-lid ?jar ?proportioned-olive-oil-ml ?quantity-m ?unit-m)
+(transfer-contents ?output-container-n ?rest-n ?output-ks-n ?output-ks-m ?output-container-m ?proportioned-vinegar ?quantity-n ?unit-n)
+(transfer-contents ?output-container-o ?rest-o ?output-ks-o ?output-ks-n ?output-container-n ?proportioned-sugar ?quantity-o ?unit-o)
+
+;; "Shake to blend."
+; IMPLICIT: close off the jar before shaking it to mix the contents
+(cover ?covered-jar ?ks-with-covered-jar ?output-ks-o ?output-container-o ?jar-lid)
+(shake ?salad-dressing ?ks-with-dressing ?ks-with-covered-jar ?covered-jar)
+
+;; "Keep refrigerated until serving time."
+(refrigerate ?cooled-dressing ?ks-with-cooled-dressing ?ks-with-dressing ?salad-dressing ?fridge-2 ?cooling-quantity-2 ?cooling-unit-2)
+
+;; "To serve the salad, toss with dressing and top with croutons."
+; IMPLICIT: the salad and the dressing should be uncovered before you can combine them
+(uncover ?uncovered-salad ?used-plastic-wrap ?ks-with-uncovered-salad ?ks-with-cooled-dressing ?cooled-salad)
+(uncover ?uncovered-jar ?used-jar-lid ?ks-with-uncovered-jar ?ks-with-uncovered-salad ?covered-jar)
+(transfer-contents ?output-container-r ?rest-r ?output-ks-r ?ks-with-uncovered-jar ?uncovered-salad ?uncovered-jar ?quantity-r ?unit-r)
+; EFFICIENCY: Reuse tools
+(mingle ?dressed-salad ?ks-with-dressed-salad ?output-ks-r ?output-container-r ?mingling-tool)
+(sprinkle ?croutons-vinegar-salad ?ks-with-croutons-vinegar-salad ?ks-with-dressed-salad ?dressed-salad ?baked-croutons)
+
+;; "Serve and enjoy!"
+; DECLARATIVE: enjoy is not an actual operation that should be executed by the agent

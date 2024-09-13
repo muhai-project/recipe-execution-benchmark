@@ -1,0 +1,38 @@
+<recipe>
+    <id>almond-crescent-cookies-4</id>
+    <title>Almond Crescent Cookies</title>
+    <ingredients>
+        <ingredient>            
+            230 grams butter            
+        </ingredient>
+        <ingredient>            
+            2 tsp vanilla            
+        </ingredient>
+        <ingredient>            
+            100 g confectioners' sugar            
+        </ingredient>
+        <ingredient>            
+            1 tbsp water            
+        </ingredient>
+        <ingredient>            
+            240 grams flour           
+        </ingredient>
+        <ingredient>            
+            140 grams chopped almonds            
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>            
+            Cream butter, vanilla, sugar and add flour and water.             
+        </instruction>
+        <instruction>            
+            Mix thoroughly, stir in almonds.              
+        </instruction>
+        <instruction>            
+            Form crescents of around 30 grams.             
+        </instruction>
+        <instruction>            
+            Bake in greased cookie sheet, in slow oven, about 150 degrees, for 20 minutes.            
+        </instruction>
+    </instructions>
+</recipe>

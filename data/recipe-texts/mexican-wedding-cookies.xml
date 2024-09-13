@@ -1,0 +1,38 @@
+<recipe>
+    <id>mexican-wedding-cookies</id>
+    <title>Mexican Wedding Cookies</title>
+    <ingredients>
+        <ingredient>                        
+            230 grams butter, softened                        
+        </ingredient>
+        <ingredient>                        
+            120 grams powdered sugar                        
+        </ingredient>
+        <ingredient>                        
+            240 grams flour, sifted                        
+        </ingredient>
+        <ingredient>                        
+            120 g walnuts, ground                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon vanilla                        
+        </ingredient>
+        <ingredient>                        
+            60 grams additional powdered sugar                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Combine all ingredients.                        
+        </instruction>
+        <instruction>                        
+            Form into balls of around 25g.                        
+        </instruction>
+        <instruction>                        
+            Bake on cookie sheet at 180°C for about 10 minutes.                        
+        </instruction>
+        <instruction>                        
+            Roll in additional powdered sugar while still warm.                        
+        </instruction>
+    </instructions>
+</recipe>

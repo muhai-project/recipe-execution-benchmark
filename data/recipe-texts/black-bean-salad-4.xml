@@ -1,0 +1,50 @@
+<recipe>
+    <id>black-bean-salad-4</id>
+    <title>Black Bean and Mango Salad</title>
+    <ingredients>
+        <ingredient>                        
+            400 grams black beans, rinsed                        
+        </ingredient>
+        <ingredient>                        
+            150 grams diced red bell pepper                        
+        </ingredient>
+        <ingredient>                        
+            6 green onions, thinly sliced                        
+        </ingredient>
+        <ingredient>                        
+            1 jalapeno pepper, seeded and minced                        
+        </ingredient>
+        <ingredient>                        
+            20 grams coarsely chopped fresh cilantro leaves                        
+        </ingredient>
+        <ingredient>                        
+            250 ml lime juice                        
+        </ingredient>
+        <ingredient>                        
+            1 tablespoon olive oil                        
+        </ingredient>
+        <ingredient>                        
+            330 grams diced mango                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon salt                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Gather the ingredients.                        
+        </instruction>
+        <instruction>                        
+            In a large bowl, combine the rinsed black beans, the diced bell pepper, green onions, minced jalapeno pepper, and fresh cilantro.                        
+        </instruction>
+        <instruction>                        
+            In a separate small bowl, whisk together the olive oil and lime juice.                        
+        </instruction>
+        <instruction>                        
+            Pour the olive oil and lime juice mixture over the bean mix, and gently toss together until well mixed.                        
+        </instruction>
+        <instruction>                        
+            Once the ingredients are well combined, carefully and gently fold in the diced mango and season lightly with salt.                        
+        </instruction>
+    </instructions>
+</recipe>

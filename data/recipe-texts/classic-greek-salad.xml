@@ -1,0 +1,86 @@
+<recipe>
+    <id>classic-greek-salad</id>
+    <title>Greek Salad With Lettuce and Lemon Garlic Dressing</title>
+    <ingredients>
+        <ingredient>                        
+            1 cucumber                        
+        </ingredient>
+        <ingredient>                        
+            1 tomato                        
+        </ingredient>
+        <ingredient>                        
+            3 radishes                        
+        </ingredient>
+        <ingredient>                        
+            1 red onion                        
+        </ingredient>
+        <ingredient>                        
+            1 red bell pepper                        
+        </ingredient>
+        <ingredient>                        
+            115 grams feta cheese (cubed)                        
+        </ingredient>
+        <ingredient>                        
+            90 grams black olives (pitted)                        
+        </ingredient>
+        <ingredient>                        
+            4 tablespoons olive oil                        
+        </ingredient>
+        <ingredient>                        
+            8 tablespoons lemon juice                        
+        </ingredient>
+        <ingredient>                        
+            1 clove garlic (minced)                        
+        </ingredient>
+        <ingredient>                        
+            1 1/2 teaspoon fresh oregano leaves                        
+        </ingredient>
+        <ingredient>                        
+            1 head romaine lettuce (washed, chopped)                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon salt                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon black pepper (ground)                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Peel the cucumber.                         
+        </instruction>
+        <instruction>                        
+            Slice it into thin rounds.                        
+        </instruction>
+        <instruction>                        
+            Cut out the stem and core of the tomato and chop.                        
+        </instruction>
+        <instruction>                        
+            Thinly slice the radishes and onion.                        
+        </instruction>
+        <instruction>                        
+            Slice the bell pepper into strips.                        
+        </instruction>
+        <instruction>                        
+            Combine the cucumber and tomato with the sliced radishes and onion in a large bowl.                        
+        </instruction>
+        <instruction>                        
+            Add the feta cheese and olives.                        
+        </instruction>
+        <instruction>                        
+            In a small bowl combine the olive oil, lemon juice, garlic, and oregano.                         
+        </instruction>
+        <instruction>                        
+            Whisk to blend.                        
+        </instruction>
+        <instruction>                        
+            Toss the vegetables with lemon and olive oil mixture.                        
+        </instruction>
+        <instruction>                        
+            Sprinkle lightly with salt and ground black papper.                        
+        </instruction>
+        <instruction>                        
+            Enjoy!                        
+        </instruction>
+    </instructions>
+</recipe>

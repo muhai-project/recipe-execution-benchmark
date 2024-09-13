@@ -1,0 +1,99 @@
+<recipe>
+    <id>easy-banana-bread</id>
+    <title>Easy Banana Bread</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                60 grams butter
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen-state)
+                (fetch-and-proportion ?proportioned-butter ?kitchen-state-with-butter ?kitchen-state ?target-container-1 butter 60 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                2 eggs
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-eggs ?kitchen-state-with-eggs ?kitchen-state-with-butter ?target-container-2 egg 2 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                200 grams sugar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-sugar ?kitchen-state-with-sugar ?kitchen-state-with-eggs ?target-container-3 sugar 200 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                3 bananas, mashed
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-bananas ?kitchen-state-with-bananas ?kitchen-state-with-sugar ?target-container-4 banana 3 piece)
+                (mash ?mashed-bananas ?kitchen-state-with-mashed-bananas ?kitchen-state-with-bananas ?proportioned-bananas ?fork)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tsp. vanilla
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-vanilla ?kitchen-state-with-vanilla ?kitchen-state-with-mashed-bananas ?target-container-5 vanilla-extract 1 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                200 grams self-rising flour
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-self-rising-flour ?kitchen-state-with-self-rising-flour ?kitchen-state-with-vanilla ?target-container-6 self-rising-flour 200 g)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Cream together butter, eggs and sugar until smooth. 
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-self-rising-flour ?target-container-7 ?proportioned-butter ?quantity-x ?unit-x)
+                (crack ?output-container-y ?output-kitchen-state-y ?output-kitchen-state-x ?proportioned-eggs ?output-container-x)
+                (transfer-contents ?output-container-z ?rest-z ?output-kitchen-state-z ?output-kitchen-state-y ?output-container-y ?proportioned-sugar ?quantity-z ?unit-z)
+                (beat ?creamed-mixture ?kitchen-state-with-creamed-mixture ?output-kitchen-state-z ?output-container-z ?beating-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Add bananas and vanilla; beat well. 
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-a ?rest-a ?output-kitchen-state-a ?kitchen-state-with-creamed-mixture ?creamed-mixture ?mashed-bananas ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-kitchen-state-b ?output-kitchen-state-a ?output-container-a ?proportioned-vanilla ?quantity-b ?unit-b)
+                (beat ?beaten-mixture ?kitchen-state-with-beaten-mixture ?output-kitchen-state-b ?output-container-b ?beating-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Mix in flour.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-c ?rest-c ?output-kitchen-state-c ?kitchen-state-with-beaten-mixture ?beaten-mixture ?proportioned-self-rising-flour ?quantity-c ?unit-c)
+                (mix ?banana-bread-batter ?kitchen-state-with-banana-bread-batter ?output-kitchen-state-c ?output-container-c ?beating-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Bake at 165°C for about 1 hour.
+            </utterance>
+            <meaning>
+                (fetch ?pan ?kitchen-state-with-pan ?kitchen-state-with-banana-bread-batter pan 1)
+                (grease ?greased-pan ?kitchen-state-with-greased-pan ?kitchen-state-with-pan ?pan ?grease)
+                (spread ?pan-with-batter ?kitchen-state-with-batter-in-pan ?kitchen-state-with-greased-pan ?greased-pan ?banana-bread-batter ?scraper)
+                (bake ?baked-banana-bread ?kitchen-state-with-baked-banana-bread ?kitchen-state-with-batter-in-pan ?pan-with-batter ?oven 60 minute 165 degrees-celsius)
+            </meaning>
+        </instruction>
+    </instructions>
+</recipe>

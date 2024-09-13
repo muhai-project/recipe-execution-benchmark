@@ -1,0 +1,52 @@
+#almond-crescent-cookies
+(get-kitchen ?kitchen)
+    
+(fetch-and-proportion ?proportioned-butter ?ks-with-butter ?kitchen ?target-container-1 butter 230 g)
+
+; IMPLICIT: let the butter warm up
+(bring-to-temperature ?warm-butter ?ks-with-warm-butter ?ks-with-butter ?proportioned-butter ?room-temp-quantity ?room-temp-unit)
+    
+(fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-warm-butter ?target-container-2 white-sugar 120 g)
+    
+(fetch-and-proportion ?proportioned-vanilla ?ks-with-vanilla ?ks-with-sugar ?target-container-3 vanilla-extract 1 teaspoon)
+    
+(fetch-and-proportion ?proportioned-almond ?ks-with-almond ?ks-with-vanilla ?target-container-4 almond-extract 1 teaspoon)
+    
+(fetch-and-proportion ?proportioned-flour ?ks-with-flour ?ks-with-almond ?target-container-5 all-purpose-flour 340 g)
+
+(fetch-and-proportion ?proportioned-almond-flour ?ks-with-almond-flour ?ks-with-flour ?target-container-6 almond-flour 120 g)
+    
+(fetch-and-proportion ?proportioned-powdered-sugar ?ks-with-powdered-sugar ?ks-with-almond-flour ?target-container-7 powdered-white-sugar 30 g)
+    
+(transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-powdered-sugar ?empty-container-a ?warm-butter ?quantity-a ?unit-a)
+(transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?proportioned-sugar ?quantity-b ?unit-b)
+(beat ?beaten-mixture ?ks-with-beaten-mixture ?output-ks-b ?output-container-b ?mixing-tool)
+
+(transfer-contents ?output-container-c ?rest-c ?output-ks-c ?ks-with-beaten-mixture ?beaten-mixture ?proportioned-vanilla ?quantity-c ?unit-c) 
+(transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?proportioned-almond ?quantity-d ?unit-d)
+
+; MISSING EFFICIENCY: New tool is used
+(fetch ?new-mixing-tool-1 ?ks-with-new-mixing-tool-1 ?output-ks-d whisk 1)
+(mix ?intermediate-mixture ?ks-with-intermediate-mixture ?ks-with-new-mixing-tool-1 ?output-container-d ?new-mixing-tool-1) 
+
+(transfer-contents ?output-container-e ?rest-e ?output-ks-e ?ks-with-intermediate-mixture ?intermediate-mixture ?proportioned-flour ?quantity-e ?unit-e)
+(transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?intermediate-mixture ?proportioned-almond-flour ?quantity-f ?unit-f)
+
+; MISSING EFFICIENCY: New tool is used
+(fetch ?new-mixing-tool-2 ?ks-with-new-mixing-tool-2 ?output-ks-f whisk 1)
+(mix ?dough ?ks-with-dough ?ks-with-new-mixing-tool-2 ?output-container-f ?new-mixing-tool-2) 
+
+(portion-and-arrange ?portioned-dough ?ks-with-dough-portions ?ks-with-dough ?dough 25 g ?pattern ?countertop)
+(shape ?bakeable-balls ?ks-with-balls ?ks-with-dough-portions ?portioned-dough ball-shape)
+(shape ?bakeable-crescents ?ks-with-crescents ?ks-with-balls ?bakeable-balls crescent-shape)
+
+; IMPLICIT: fetch a baking tray and baking paper    
+(fetch ?baking-tray ?ks-with-baking-tray ?ks-with-crescents baking-tray 1)
+(fetch ?baking-paper ?ks-with-baking-paper ?ks-with-baking-tray baking-paper 1)
+
+(line ?lined-baking-tray ?ks-with-lined-tray ?ks-with-baking-paper ?baking-tray ?baking-paper)
+(transfer-items ?tray-with-crescents ?ks-with-crescents-tray ?ks-with-lined-tray ?bakeable-crescents ?default-pattern ?lined-baking-tray)
+
+(bake ?baked-crescents ?ks-with-baked-crescents ?ks-with-crescents-tray ?tray-with-crescents ?oven 15 minute 175 degrees-celsius)
+
+(sprinkle ?almond-crescent-cookies ?ks-with-almond-crescent-cookies ?ks-with-baked-crescents ?baked-crescents ?proportioned-powdered-sugar)

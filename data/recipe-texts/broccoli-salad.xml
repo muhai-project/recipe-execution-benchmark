@@ -1,0 +1,47 @@
+<recipe>
+    <id>broccoli-salad</id>
+    <title>Broccoli Salad</title>
+    <ingredients>
+        <ingredient>                        
+            1 head fresh broccoli (do not use frozen!)                        
+        </ingredient>
+        <ingredient>                        
+            50 grams red onion, chopped                        
+        </ingredient>
+        <ingredient>                        
+            450 grams cooked bacon                        
+        </ingredient>
+        <ingredient>                        
+            2 1/2 tablespoons cider vinegar                        
+        </ingredient>
+        <ingredient>                        
+            230 grams mayonnaise                        
+        </ingredient>
+        <ingredient>                        
+            70 grams sugar                        
+        </ingredient>
+        <ingredient>                        
+            170 grams grated mozzarella cheese                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Cut cooked bacon into pieces.                        
+        </instruction>
+        <instruction>                        
+            Chop up broccoli into bite size pieces.                        
+        </instruction>
+        <instruction>                        
+            Mix broccoli, onions, bacon and mozzarella in large bowl.                        
+        </instruction>
+        <instruction>                        
+            In separate large bowl combine vinegar, sugar and mayo.                        
+        </instruction>
+        <instruction>                        
+            Pour over broccoli mixture and toss to coat.                        
+        </instruction>
+        <instruction>                        
+            Best if made a day ahead and stored in the refrigerator.                        
+        </instruction>
+    </instructions>
+</recipe>

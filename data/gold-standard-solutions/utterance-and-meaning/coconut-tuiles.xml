@@ -1,0 +1,142 @@
+<recipe>
+    <id>coconut-tuiles</id>
+    <title>Coconut Tuiles</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                230 grams of unsalted butter, softened
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen)
+                (fetch-and-proportion ?proportioned-butter ?ks-with-butter ?kitchen ?target-container-1 butter 230 g)
+                (bring-to-temperature ?warm-butter ?ks-with-warm-butter ?ks-with-butter ?proportioned-butter ?room-temp-quantity ?room-temp-unit)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                100 grams sugar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-warm-butter ?target-container-2 white-sugar 100 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                80 grams of egg whites, lightly beaten
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-egg-white ?ks-with-egg-white ?ks-with-sugar ?target-container-3 egg-white 80 g)
+                (beat ?beaten-egg-white ?ks-with-beaten-egg-white ?ks-with-egg-white ?proportioned-egg-white ?mixing-tool)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                3 tablespoons all-purpose flour
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-flour ?ks-with-flour ?ks-with-beaten-egg-white ?target-container-4 all-purpose-flour 3 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                200 grams shredded coconut, divided
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-coconut-34 ?ks-with-coconut-34 ?ks-with-flour ?target-container-5 shredded-coconut 150 g)
+                (fetch-and-proportion ?proportioned-coconut-14 ?ks-with-coconut-14 ?ks-with-coconut-34 ?target-container-6 shredded-coconut 50 g)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Preheat oven to 200°C.
+            </utterance>
+            <meaning>
+                (preheat-oven ?preheated-oven ?ks-with-preheated-oven ?ks-with-coconut-14 ?oven 200 degrees-celsius)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Using an electric mixer, beat the butter. 
+            </utterance>
+            <meaning>
+                (fetch ?mixer ?ks-with-mixer ?ks-with-coconut-14 mixer 1)
+                (beat ?beaten-butter ?ks-with-beaten-butter ?ks-with-mixer ?warm-butter ?mixer)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Add the sugar and beat until light and fluffy. 
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-beaten-butter ?empty-bowl ?beaten-butter ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?proportioned-sugar ?quantity-b ?unit-b)
+                (beat ?beaten-sugar-mixture ?ks-with-beaten-sugar-mixture ?ks-with-mixer ?proportioned-sugar ?mixer)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Add the egg whites, beat slowly to smoothen the mixture.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-white ?rest-white ?output-ks-white ?ks-with-beaten-sugar-mixture ?beaten-sugar-mixture ?proportioned-egg-white ?quantity-white ?unit-white)
+                (beat ?beaten-egg-mixture ?ks-with-beaten-egg-mixture ?output-ks-white ?output-container-white ?mixing-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Add flour to the mixture and fold it in gently with 150 grams of the coconut.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?ks-with-beaten-egg-mixture ?beaten-egg-mixture ?proportioned-flour ?quantity-c ?unit-c)
+                (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?proportioned-coconut-34 ?quantity-d ?unit-d)
+                (mix ?dough ?ks-with-dough ?output-ks-d ?output-container-d ?mixing-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Spoon rounded teaspoons of the mixture (around 25 grams) 5 cm apart on to a baking sheet that has been greased. 
+            </utterance>
+            <meaning>
+                (fetch ?baking-tray ?ks-with-baking-tray ?ks-with-dough baking-tray 1)
+                (grease ?greased-tray ?ks-with-greased-tray ?ks-with-baking-tray ?baking-tray ?grease)
+                (portion-and-arrange ?portioned-dough ?ks-with-dough-portions ?ks-with-greased-tray ?dough 25 g 5-cm-apart ?greased-tray)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                With the remaining 50 grams coconut, sprinkle a little over each round.
+            </utterance>
+            <meaning>
+                (sprinkle ?sprinkled-dough ?ks-with-sprinkled-dough ?ks-with-dough-portions ?portioned-dough ?proportioned-coconut-14)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Bake the rounds at 200°C in the oven for 6 minutes.
+            </utterance>
+            <meaning>
+                (bake ?baked-rounds ?ks-with-baked-rounds ?ks-with-sprinkled-dough ?sprinkled-dough ?oven 6 minute 200 degrees-celsius)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Let the cookies stay on the baking sheets for half a minute, so they are just firm enough to hold their shape. 
+            </utterance>
+            <meaning>
+                (leave-for-time ?cooling-rounds ?ks-with-cooling-rounds ?ks-with-baked-rounds ?baked-rounds 0.5 minute)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Then let the cookies cool completely on wire racks.
+            </utterance>
+            <meaning>
+                (fetch ?wire-rack ?ks-with-wire-rack ?ks-with-cooling-rounds wire-rack 1)
+                (transfer-items ?rounds-on-wire-rack ?ks-with-rounds-on-wire-rack ?ks-with-wire-rack ?cooling-rounds ?default-pattern ?wire-rack)
+                (bring-to-temperature ?cooled-rounds ?ks-with-cooled-cookies ?ks-with-rounds-on-wire-rack ?rounds-on-wire-rack ?room-temp-qty-2 ?room-temp-unit-2)
+            </meaning>
+        </instruction>
+    </instructions>
+</recipe>

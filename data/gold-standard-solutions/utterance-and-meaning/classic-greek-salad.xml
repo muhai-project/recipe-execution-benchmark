@@ -1,0 +1,249 @@
+<recipe>
+    <id>classic-greek-salad</id>
+    <title>Greek Salad With Lettuce and Lemon Garlic Dressing</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                1 cucumber
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen)
+                (fetch-and-proportion ?proportioned-cucumber ?ks-with-cucumber ?kitchen ?target-container-1 cucumber 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tomato
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-tomato ?ks-with-tomato ?ks-with-cucumber ?target-container-2 tomato 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                3 radishes
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-radish ?ks-with-radish ?ks-with-tomato ?target-container-3 radish 3 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 red onion
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-radish ?target-container-4 red-onion 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 red bell pepper
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-bell-pepper ?ks-with-bell-pepper ?ks-with-onion ?target-container-5 red-bell-pepper 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                115 grams feta cheese (cubed)
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-cheese ?ks-with-cheese ?ks-with-bell-pepper ?target-container-6 feta-cheese 115 g)
+                (cut ?cubed-cheese ?ks-with-cubed-cheese ?ks-with-cheese ?proportioned-cheese cubes ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                90 grams black olives (pitted)
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-olives ?ks-with-olives ?ks-with-cubed-cheese ?target-container-7 black-olive 90 g)
+                (seed ?pitted-olives ?olive-pits ?ks-with-pitted-olives ?ks-with-olives ?proportioned-olives ?knife)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                4 tablespoons olive oil
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-olive-oil ?ks-with-olive-oil ?ks-with-pitted-olives ?target-container-8 olive-oil 4 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                8 tablespoons lemon juice
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-lemon-juice ?ks-with-lemon-juice ?ks-with-olive-oil ?target-container-9 lemon-juice 8 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 clove garlic (minced)
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-garlic ?ks-with-garlic ?ks-with-lemon-juice ?target-container-10 garlic 1 piece)
+                (cut ?minced-garlic ?ks-with-minced-garlic ?ks-with-garlic ?proportioned-garlic minced ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 1/2 teaspoon fresh oregano leaves
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-oregano ?ks-with-oregano ?ks-with-minced-garlic ?target-container-11 fresh-oregano 1.5 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 head romaine lettuce (washed, chopped)
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-lettuce ?ks-with-lettuce ?ks-with-oregano ?target-container-12 romaine-lettuce 1 piece)
+                (wash ?washed-lettuce ?ks-with-washed-lettuce ?ks-with-lettuce ?proportioned-lettuce)
+                (cut ?chopped-lettuce ?ks-with-chopped-lettuce ?ks-with-washed-lettuce ?washed-lettuce chopped ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1/2 teaspoon salt
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-salt ?ks-with-salt ?ks-with-chopped-lettuce ?target-container-13 salt 1/2 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1/2 teaspoon black pepper (ground)
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-pepper ?ks-with-pepper ?ks-with-salt ?target-container-14 ground-black-pepper 1/2 teaspoon)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Peel the cucumber. 
+            </utterance>
+            <meaning>
+                (peel ?peeled-cucumber ?cucumber-peels ?ks-with-peeled-cucumber ?ks-with-pepper ?proportioned-cucumber ?knife)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Slice it into thin rounds.
+            </utterance>
+            <meaning>
+                (cut ?sliced-cucumber ?ks-with-sliced-cucumber ?ks-with-peeled-cucumber ?peeled-cucumber slices ?knife ?cutting-board-1)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Cut out the stem and core of the tomato and chop.
+            </utterance>
+            <meaning>
+                (seed ?seeded-tomato ?tomato-core ?ks-with-seeded-tomato ?ks-with-sliced-cucumber ?proportioned-tomato ?knife)
+                (cut ?chopped-tomato ?ks-with-chopped-tomato ?ks-with-seeded-tomato ?proportioned-tomato chopped ?knife ?cutting-board-1)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Thinly slice the radishes and onion.
+            </utterance>
+            <meaning>
+                (cut ?sliced-radish ?ks-with-sliced-radish ?ks-with-chopped-tomato ?proportioned-radish fine-slices ?knife ?cutting-board-1)
+                (peel ?peeled-onion ?peelings ?ks-with-peeled-onion ?ks-with-sliced-radish ?proportioned-onion ?knife)
+                (cut ?sliced-onion ?ks-with-sliced-onion ?ks-with-peeled-onion ?peeled-onion fine-slices ?knife ?cutting-board-8)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Slice the bell pepper into strips.
+            </utterance>
+            <meaning>
+                (cut ?sliced-bell-pepper ?ks-with-sliced-bell-pepper ?ks-with-sliced-onion ?proportioned-onion fine-slices ?knife ?cutting-board-1)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Combine the cucumber and tomato with the sliced radishes and onion in a large bowl.
+            </utterance>
+            <meaning>
+                (fetch ?large-bowl ?ks-with-large-bowl ?ks-with-sliced-bell-pepper large-bowl 1)
+                (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl ?large-bowl ?sliced-cucumber ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?chopped-tomato ?quantity-b ?unit-b)
+                (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?sliced-radish ?quantity-c ?unit-c)
+                (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?sliced-onion ?quantity-d ?unit-d)
+                (mingle ?veggies-mix ?ks-with-veggies-mix ?output-ks-d ?output-container-d ?wooden-spoon)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Add the feta cheese and olives.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?ks-with-veggies-mix ?veggies-mix ?cubed-cheese ?quantity-e ?unit-e)
+                (transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?pitted-olives ?quantity-f ?unit-f)
+                (mingle ?cheesy-veggies-mix ?ks-with-cheesy-veggies-mix ?output-ks-f ?output-container-f ?wooden-spoon)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                In a small bowl combine the olive oil, lemon juice, garlic, and oregano. 
+            </utterance>
+            <meaning>
+                (fetch ?small-bowl ?ks-with-small-bowl ?ks-with-cheesy-veggies-mix small-bowl 1)
+                (transfer-contents ?output-container-g ?rest-g ?output-ks-g ?ks-with-small-bowl ?small-bowl ?proportioned-olive-oil ?quantity-g ?unit-g)
+                (transfer-contents ?output-container-h ?rest-h ?output-ks-h ?output-ks-g ?output-container-g ?proportioned-lemon-juice ?quantity-h ?unit-h)
+                (transfer-contents ?output-container-i ?rest-i ?output-ks-i ?output-ks-h ?output-container-h ?minced-garlic ?quantity-i ?unit-i)
+                (transfer-contents ?output-container-j ?rest-j ?output-ks-j ?output-ks-i ?output-container-i ?proportioned-oregano ?quantity-j ?unit-j)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Whisk to blend.
+            </utterance>
+            <meaning>
+                (mix ?dressing ?ks-with-dressing ?output-ks-j ?output-container-j ?whisk)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Toss the vegetables with lemon and olive oil mixture.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-k ?rest-k ?output-ks-k ?ks-with-dressing ?cheesy-veggies-mix ?dressing ?quantity-k ?unit-k)
+                (mingle ?salad ?ks-with-salad ?output-ks-k ?output-container-k ?wooden-spoon)
+            </meaning>
+        </instruction>
+
+	<instruction>
+	    <utterance>
+	    	Line individual salad bowls or plates with chopped lettuce and top with the salad mixture.
+	    </utterance>
+	    <meaning>
+		(fetch ?plates ?ks-with-plates ?ks-with-salad medium-plate 4)
+		(line ?lined-plates ?ks-with-lined-plates ?ks-with-salad ?plates ?chopped-lettuce)
+		(top-with ?lettuce-topped-with-salad ?ks-with-topped-lettuce ?ks-with-lined-plates ?lined-plates ?salad ?topping-quantity ?topping-unit)
+	    </meaning>
+	</instruction>
+
+        <instruction>
+            <utterance>
+                Sprinkle lightly with salt and ground black papper.
+            </utterance>
+            <meaning>
+                (sprinkle ?salt-salad ?ks-with-salt-salad ?ks-with-topped-lettuce ?lettuce-topped-with-salad ?proportioned-salt)
+                (sprinkle ?greek-salad ?ks-with-greek-salad ?ks-with-salt-salad ?salt-salad ?proportioned-pepper)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Enjoy!
+            </utterance>
+            <meaning>
+	    </meaning>
+        </instruction>
+    </instructions>
+</recipe>

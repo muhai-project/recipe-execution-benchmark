@@ -1,0 +1,101 @@
+<recipe>
+    <id>almond-crescent-cookies-4</id>
+    <title>Almond Crescent Cookies</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                230 grams butter
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen)
+                (fetch-and-proportion ?proportioned-butter ?ks-with-butter ?kitchen ?target-container-1 butter 230 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                2 tsp vanilla
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-vanilla ?ks-with-vanilla ?ks-with-butter ?target-container-2 vanilla 2 teaspoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                100 g confectioners' sugar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-powdered-sugar ?ks-with-sugar ?ks-with-vanilla ?target-container-3 powdered-white-sugar 100 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                1 tbsp water
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-water ?ks-with-water ?ks-with-sugar ?target-container-4 water 1 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                240 grams flour
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-flour ?ks-with-flour ?ks-with-water ?target-container-5 all-purpose-flour 240 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                140 grams chopped almonds
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-almonds ?ks-with-almonds ?ks-with-flour ?target-container-6 almond 140 g)
+                (cut ?chopped-almonds ?ks-with-chopped-almonds ?ks-with-almonds ?proportioned-almonds chopped ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Cream butter, vanilla, sugar and add flour and water. 
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-chopped-almonds ?empty-container-a ?proportioned-butter ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?proportioned-vanilla ?quantity-b ?unit-b)
+                (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?proportioned-powdered-sugar ?quantity-c ?unit-c)
+                (beat ?beaten-mixture ?ks-with-beaten-mixture ?output-ks-c ?output-container-c ?mixing-tool)
+                (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?ks-with-beaten-mixture ?beaten-mixture ?proportioned-flour ?quantity-d ?unit-d)
+                (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?proportioned-water ?quantity-e ?unit-e)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Mix thoroughly, stir in almonds.  
+            </utterance>
+            <meaning>
+                (mix ?dough ?ks-with-dough ?output-ks-e ?output-container-e ?mixing-tool)
+                (transfer-contents ?output-container-f ?rest-f ?output-ks-f ?ks-with-dough ?dough ?chopped-almonds ?quantity-f ?unit-f)
+                (mingle ?dough-with-almonds ?ks-with-almonds-dough ?output-ks-f ?output-container-f ?mixing-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Form crescents of around 30 grams.  
+            </utterance>
+            <meaning>
+                (portion-and-arrange ?portioned-dough ?ks-with-dough-portions ?ks-with-almonds-dough ?dough-with-almonds 30 g ?pattern ?countertop)
+                (shape ?bakeable-crescents ?ks-with-crescents ?ks-with-dough-portions ?portioned-dough crescent-shape)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Bake in greased cookie sheet, in slow oven, about 150 degrees, for 20 minutes.
+            </utterance>
+            <meaning>   
+                (fetch ?cookie-sheet ?ks-with-cookie-sheet ?ks-with-crescents cookie-sheet 1)
+                (grease ?greased-sheet ?ks-with-greased-sheet ?ks-with-cookie-sheet ?cookie-sheet ?grease)
+                (transfer-items ?tray-with-crescents ?ks-with-crescents-tray ?ks-with-greased-sheet ?bakeable-crescents ?default-pattern ?greased-sheet)
+                (bake ?baked-crescents ?ks-with-baked-crescents ?ks-with-crescents-tray ?tray-with-crescents ?oven 20 minute 150 degrees-celsius)
+            </meaning>
+        </instruction>
+    </instructions>
+</recipe>

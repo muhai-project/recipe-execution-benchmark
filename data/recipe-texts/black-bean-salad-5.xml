@@ -1,0 +1,62 @@
+<recipe>
+    <id>black-bean-salad-5</id>
+    <title>Black Bean Salad</title>
+    <ingredients>
+        <ingredient>                        
+            400 grams black beans, rinsed                        
+        </ingredient>
+        <ingredient>                        
+            250 grams frozen corn, defrosted                        
+        </ingredient>
+        <ingredient>                        
+            30 grams chopped scallions                        
+        </ingredient>
+        <ingredient>                        
+            1 jalapeno pepper, seeded and minced                        
+        </ingredient>
+        <ingredient>                        
+            1 red bell pepper, seeded and chopped                        
+        </ingredient>
+        <ingredient>                        
+            2 tablespoons lime juice                        
+        </ingredient>
+        <ingredient>                        
+            1 tablespoon olive oil                        
+        </ingredient>
+        <ingredient>                        
+            1 avocado, chopped                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon sugar                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon salt                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon pepper                        
+        </ingredient>
+        <ingredient>                        
+            10 grams chopped fresh cilantro                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            In a large bowl, gently mix the black beans, corn, scallions, jalapeños, red bell pepper, lime juice, and olive oil.                         
+        </instruction>
+        <instruction>                        
+            Then, gently fold in the chopped avocados.                        
+        </instruction>
+        <instruction>                        
+            Add salt and pepper.                        
+        </instruction>
+        <instruction>                        
+            Sprinkle with sugar, enough to balance the acidity from the lime juice.                         
+        </instruction>
+        <instruction>                        
+            Chill.                        
+        </instruction>
+        <instruction>                        
+            Right before serving, add the chopped fresh cilantro.                        
+        </instruction>
+    </instructions>
+</recipe>

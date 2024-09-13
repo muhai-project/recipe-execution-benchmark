@@ -1,0 +1,38 @@
+<recipe>
+    <id>black-bean-salad-3</id>
+    <title>Black Bean and Corn Salad</title>
+    <ingredients>
+        <ingredient>                        
+            400 grams black beans                        
+        </ingredient>
+        <ingredient>                        
+            400 grams corn                        
+        </ingredient>
+        <ingredient>                        
+            1 chopped onion                        
+        </ingredient>
+        <ingredient>                        
+            2 chopped tomatoes                        
+        </ingredient>
+        <ingredient>                        
+            60 grams diced green chili                        
+        </ingredient>
+        <ingredient>                        
+            3 tbs. Trader Joe's cilantro salad dressing                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon Tabasco                        
+        </ingredient>
+        <ingredient>                        
+            1/4 teaspoon pepper                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Combine ingredients, mix well.                        
+        </instruction>
+        <instruction>                        
+            Refrigerate for 1 hour before serving.                        
+        </instruction>
+    </instructions>
+</recipe>

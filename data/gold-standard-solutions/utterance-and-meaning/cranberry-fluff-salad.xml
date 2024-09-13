@@ -1,0 +1,91 @@
+<recipe>
+    <id>cranberry-fluff-salad</id>
+    <title>Cranberry Fluff Salad</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                200 grams raw cranberries, chopped
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen)
+                (fetch-and-proportion ?proportioned-cranberries ?ks-with-cranberries ?kitchen ?target-container-1 cranberry 200 g)
+                (cut ?chopped-cranberries ?ks-with-chopped-cranberries ?ks-with-cranberries ?proportioned-cranberries chopped ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                125 g sugar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-chopped-cranberries ?target-container-2 white-sugar 125 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                240 g drained crushed pineapple
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-pineapple ?ks-with-pineapple ?ks-with-sugar ?target-container-3 crushed-pineapple-in-syrup 240 g)
+                (drain ?drained-pineapple ?rest-liquid ?ks-with-drained-pineapple ?ks-with-pineapple ?proportioned-pineapple ?colander)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                450 g miniature marshmallows
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-marshmallow ?ks-with-marshmallow ?ks-with-pineapple ?target-container-4 marshmallow 450 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                230 g heavy cream (whipped)
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-cream ?ks-with-heavy-cream ?ks-with-marshmallow ?target-container-5 heavy-cream 230 g)
+                (beat ?whipped-cream ?ks-with-whipped-cream ?ks-with-heavy-cream ?proportioned-cream ?whisk)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                60 g chopped walnuts
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-walnut ?ks-with-walnut ?ks-with-whipped-cream ?target-container-6 walnut 60 g)
+                (cut ?chopped-walnut ?ks-with-chopped-walnut ?ks-with-walnut ?proportioned-walnut chopped ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Combine chopped cranberries, sugar, and pineapple and let stand for at least 1/2 hour. 
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-chopped-walnut ?empty-container ?chopped-cranberries ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?proportioned-sugar ?quantity-b ?unit-b)
+                (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?drained-pineapple ?quantity-c ?unit-c)
+                (mingle ?intermediate-mix ?ks-with-intermediate-mix ?output-ks-c ?output-container-c ?mingling-tool)
+                (leave-for-time ?rested-mix ?ks-with-rested-mix ?ks-with-intermediate-mix ?intermediate-mix 0.5 hour)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Add remaining ingredients and mix well.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?ks-with-rested-mix ?rested-mix ?whipped-cream ?quantity-d ?unit-d)
+                (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?chopped-walnut ?quantity-e ?unit-e)
+                (mingle ?salad ?ks-with-salad ?output-ks-e ?output-container-e ?mingling-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Refrigerate and allow to stand 8 hours for flavors to develop.
+            </utterance>
+            <meaning>
+                (refrigerate ?cranberry-fluff-salad ?ks-with-cranberry-fluff-salad ?ks-with-salad ?salad ?fridge 8 hour)
+            </meaning>
+        </instruction>
+    </instructions>
+</recipe>

@@ -1,0 +1,65 @@
+<recipe>
+    <id>chocolate-cream-cheese-cupcakes</id>
+    <title>Chocolate Cream Cheese Cupcakes</title>
+    <ingredients>
+        <ingredient>                        
+            230 grams cream cheese, softened                        
+        </ingredient>
+        <ingredient>                        
+            egg, slightly beaten                        
+        </ingredient>
+        <ingredient>                        
+            70 grams sugar                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon salt                        
+        </ingredient>
+        <ingredient>                        
+            180 grams chocolate chips                        
+        </ingredient>
+        <ingredient>                        
+            210 grams sugar                        
+        </ingredient>
+        <ingredient>                        
+            180 grams flour                        
+        </ingredient>
+        <ingredient>                        
+            30 grams cocoa                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon baking soda                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon salt                        
+        </ingredient>
+        <ingredient>                        
+            250 ml water                        
+        </ingredient>
+        <ingredient>                        
+            120 ml oil                        
+        </ingredient>
+        <ingredient>                        
+            1 tablespoon vinegar                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon vanilla                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            In a small bowl, combine first four ingredients.                        
+        </instruction>
+        <instruction>                        
+            Add chocolate chips and set aside.                        
+        </instruction>
+        <instruction>                        
+            Mix remaining ingredients well.                        
+        </instruction>
+        <instruction>                        
+            Fill muffin tins, lined with paper cups with this mixture.                        
+        </instruction>
+        <instruction>                        
+            Bake at 180 for 20 minutes.                        
+        </instruction>
+    </instructions>
+</recipe>

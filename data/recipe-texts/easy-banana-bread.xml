@@ -1,0 +1,38 @@
+<recipe>
+    <id>easy-banana-bread</id>
+    <title>Easy Banana Bread</title>
+    <ingredients>
+        <ingredient>                        
+            60 grams butter                        
+        </ingredient>
+        <ingredient>                        
+            2 eggs                        
+        </ingredient>
+        <ingredient>                        
+            200 grams sugar                        
+        </ingredient>
+        <ingredient>                        
+            3 bananas, mashed                        
+        </ingredient>
+        <ingredient>                        
+            1 tsp. vanilla                        
+        </ingredient>
+        <ingredient>                        
+            200 grams self-rising flour                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Cream together butter, eggs and sugar until smooth.                         
+        </instruction>
+        <instruction>                        
+            Add bananas and vanilla; beat well.                         
+        </instruction>
+        <instruction>                        
+            Mix in flour.                        
+        </instruction>
+        <instruction>                        
+            Bake at 165°C for about 1 hour.                        
+        </instruction>
+    </instructions>
+</recipe>

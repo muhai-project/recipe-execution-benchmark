@@ -1,0 +1,124 @@
+<recipe>
+    <id>broccoli-salad</id>
+    <title>Broccoli Salad</title>
+    <ingredients>
+        <ingredient>
+            <utterance>
+                1 head fresh broccoli (do not use frozen!)
+            </utterance>
+            <meaning>
+                (get-kitchen ?kitchen)
+                (fetch-and-proportion ?proportioned-broccoli ?ks-with-broccoli ?kitchen ?target-container-1 broccoli 1 piece)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                50 grams red onion, chopped
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-broccoli ?target-container-2 red-onion 50 g)
+                (peel ?peeled-onion ?peelings ?ks-with-peeled-onion ?ks-with-onion ?proportioned-onion ?knife)
+                (cut ?chopped-onion ?ks-with-chopped-onion ?ks-with-peeled-onion ?peeled-onion chopped ?knife ?cutting-board-1)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                450 grams cooked bacon
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-bacon ?ks-with-bacon ?ks-with-chopped-onion ?target-container-3 cooked-bacon 450 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                2 1/2 tablespoons cider vinegar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-vinegar ?ks-with-vinegar ?ks-with-bacon ?target-container-4 cider-vinegar 2.5 tablespoon)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                230 grams mayonnaise
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-mayo ?ks-with-mayo ?ks-with-vinegar ?target-container-5 mayonnaise 230 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                70 grams sugar
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-mayo ?target-container-6 white-sugar 70 g)
+            </meaning>
+        </ingredient>
+        <ingredient>
+            <utterance>
+                170 grams grated mozzarella cheese
+            </utterance>
+            <meaning>
+                (fetch-and-proportion ?proportioned-cheese ?ks-with-grated-cheese ?ks-with-sugar ?target-container-7 grated-mozzarella 170 g)
+            </meaning>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <utterance>
+                Cut cooked bacon into pieces.
+            </utterance>
+            <meaning>
+                (cut ?chopped-bacon ?ks-with-chopped-bacon ?ks-with-grated-cheese ?proportioned-bacon chopped ?knife ?cutting-board-1)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Chop up broccoli into bite size pieces.
+            </utterance>
+            <meaning>
+                (cut ?chopped-broccoli ?ks-with-chopped-broccoli ?ks-with-chopped-bacon ?proportioned-broccoli chopped ?knife ?cutting-board-1)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Mix broccoli, onions, bacon and mozzarella in large bowl.
+            </utterance>
+            <meaning>
+                (fetch ?large-bowl-1 ?ks-with-large-bowl-1 ?ks-with-chopped-broccoli large-bowl 1)
+                (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl-1 ?large-bowl-1 ?chopped-broccoli ?quantity-a ?unit-a)
+                (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?chopped-onion ?quantity-b ?unit-b)
+                (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?proportioned-cheese ?quantity-c ?unit-c)
+                (mingle ?broccoli-mixture ?ks-with-broccoli-mixture ?output-ks-c ?output-container-c ?mingling-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                In separate large bowl combine vinegar, sugar and mayo.
+            </utterance>
+            <meaning>
+                (fetch ?large-bowl-2 ?ks-with-large-bowl-2 ?ks-with-broccoli-mixture large-bowl 1)
+                (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?ks-with-large-bowl-2 ?large-bowl-2 ?proportioned-vinegar ?quantity-d ?unit-d)
+                (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?proportioned-sugar ?quantity-e ?unit-e)
+                (transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?proportioned-mayo ?quantity-f ?unit-f)
+                (mix ?dressing ?ks-with-dressing ?output-ks-f ?output-container-f ?mixing-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Pour over broccoli mixture and toss to coat.
+            </utterance>
+            <meaning>
+                (transfer-contents ?output-container-g ?rest-g ?output-ks-g ?ks-with-dressing ?broccoli-mixture ?dressing ?quantity-g ?unit-g)
+                (mingle ?broccoli-salad ?ks-with-broccoli-salad ?output-ks-g ?output-container-g ?mingling-tool)
+            </meaning>
+        </instruction>
+        <instruction>
+            <utterance>
+                Best if made a day ahead and stored in the refrigerator.
+            </utterance>
+            <meaning>
+                (refrigerate ?cooled-salad ?ks-with-cooled-salad ?ks-with-broccoli-salad ?broccoli-salad ?fridge 24 hour)
+            </meaning>
+        </instruction>
+    </instructions>
+</recipe>

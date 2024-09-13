@@ -1,0 +1,68 @@
+<recipe>
+    <id>easy-oatmeal-cookies</id>
+    <title>Easy Oatmeal Cookies</title>
+    <ingredients>
+        <ingredient>                        
+            150 grams raisins            
+        </ingredient>
+        <ingredient>                        
+            125 ml hot water (60 degrees C)                        
+        </ingredient>
+        <ingredient>                        
+            280 grams all-purpose flour                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon of baking soda                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon of salt                        
+        </ingredient>
+        <ingredient>                        
+            160 grams quick cooking oats                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon ground cinnamon                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon ground nutmeg                        
+        </ingredient>
+        <ingredient>                        
+            200 grams packed brown sugar                       
+        </ingredient>
+        <ingredient>                        
+            75 grams chopped walnuts                        
+        </ingredient>
+        <ingredient>                        
+            2 eggs                        
+        </ingredient>
+        <ingredient>                        
+            2OO ml vegetable oil                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon vannila extract                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Preheat the oven to 175 degrees C.                         
+        </instruction>
+        <instruction>                        
+            Soak raisins in hot water; set aside.                        
+        </instruction>
+        <instruction>                        
+            In a large bowl, sift flour with soda, salt, and spices.                         
+        </instruction>
+        <instruction>                        
+            Blend in rolled oats, sugar, and nuts.                        
+        </instruction>
+        <instruction>                        
+            In a separate bowl, beat eggs with a fork and add oil, vanilla, raisins, and water mixture; pour into flour mixture, stirring until well mixed.   
+        </instruction>
+        <instruction>                        
+            Drop by rounded spoonfuls 5 cm apart onto ungreased cookie sheets.                        
+        </instruction>
+        <instruction>                        
+            Bake for 10 minutes in the preheated oven.                        
+        </instruction>
+    </instructions>
+</recipe>

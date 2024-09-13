@@ -1,0 +1,54 @@
+<recipe>
+    <id>cole-slaw</id>
+    <title>Cole Slaw</title>
+    <ingredients>
+        <ingredient>                        
+            1 head green cabbage                        
+        </ingredient>
+        <ingredient>                        
+            2 carrots, thinly shredded                        
+        </ingredient>
+        <ingredient>                        
+            1 onion                        
+        </ingredient>
+        <ingredient>                        
+            1 green pepper                        
+        </ingredient>
+        <ingredient>                        
+            200 g sugar                        
+        </ingredient>
+        <ingredient>                        
+            230 g cider vinegar                        
+        </ingredient>
+        <ingredient>                        
+            1 tsp. salt                        
+        </ingredient>
+        <ingredient>                        
+            1 tablespoon grated horseradish                        
+        </ingredient>
+        <ingredient>                        
+            1 tsp. mustard seed                        
+        </ingredient>
+        <ingredient>                        
+            1 tsp. celery seed                        
+        </ingredient>
+        <ingredient>                        
+            1 tsp. turmeric                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Shred the cabbage and carrots together, then chop them up a bit.                        
+        </instruction>
+        <instruction>                        
+            Chop the green pepper and onion and combine it with the cabbage.                         
+        </instruction>
+        <instruction>                        
+            Boil together the vinegar, sugar, salt, and spices.                         
+        </instruction>
+        <instruction>                        
+            Pour over the slaw and allow it to set in the refrigerator for two hours before serving.                        
+        </instruction>
+    </instructions>
+
+</recipe>

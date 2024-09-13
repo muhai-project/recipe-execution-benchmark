@@ -1,0 +1,56 @@
+<recipe>
+    <id>black-bean-salad-2</id>
+    <title>Black Bean Salad</title>
+    <ingredients>
+        <ingredient>                        
+            3 teaspoons lime juice                        
+        </ingredient>
+        <ingredient>                        
+            1 garlic clove, minced                        
+        </ingredient>
+        <ingredient>                        
+            3/4 teaspoon ground cumin                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon salt                        
+        </ingredient>
+        <ingredient>                        
+            1/4 teaspoon pepper                        
+        </ingredient>
+        <ingredient>                        
+            2 tablespoons olive oil                        
+        </ingredient>
+        <ingredient>                        
+            425 grams black beans, rinsed          
+        </ingredient>
+        <ingredient>                        
+            300 grams cherry tomatoes                        
+        </ingredient>
+        <ingredient>                     
+            4 scallions, sliced                        
+        </ingredient>
+        <ingredient>                      
+            1 red chili pepper, cut into thin strips                        
+        </ingredient>
+        <ingredient>                       
+            3 tablespoons chopped cilantro                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            In small bowl stir together lime juice, garlic, cumin, salt and pepper.                        
+        </instruction>
+        <instruction>                        
+            Slowly whisk in oil.                        
+        </instruction>
+        <instruction>                        
+            In large bowl combine beans, tomatoes, scallions, red pepper and cilantro.                        
+        </instruction>
+        <instruction>                        
+            Toss with dressing to coat.                        
+        </instruction>
+        <instruction>                        
+            Let stand 15 minutes before serving.                        
+        </instruction>
+    </instructions>
+</recipe>

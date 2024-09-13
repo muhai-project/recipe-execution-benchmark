@@ -1,0 +1,59 @@
+<recipe>
+    <id>best-brownies</id>
+    <title>Absolutely Best Brownies</title>
+    <ingredients>
+        <ingredient>                        
+            120 grams butter, melted                        
+        </ingredient>
+        <ingredient>                        
+            200 grams white sugar                        
+        </ingredient>
+        <ingredient>                        
+            2 eggs                        
+        </ingredient>
+        <ingredient>                        
+            70 grams all-purpose flour                        
+        </ingredient>
+        <ingredient>                        
+            45 grams unsweetened cocoa powder                        
+        </ingredient>
+        <ingredient>                        
+            1/4 teaspoon salt                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon vanilla extract                        
+        </ingredient>
+        <ingredient>                        
+            50 grams chopped walnuts                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Preheat oven to 175 degrees C.                         
+        </instruction>
+        <instruction>                        
+            Grease and flour a baking pan.                        
+        </instruction>
+        <instruction>                        
+            In a medium bowl, beat together the butter and sugar.                         
+        </instruction>
+        <instruction>                        
+            Add eggs, and mix well.                        
+        </instruction>
+        <instruction>                        
+            Combine the flour, cocoa and salt; stir into the sugar mixture.                         
+        </instruction>
+        <instruction>                        
+            Mix in the vanilla and stir in walnuts.                        
+        </instruction>
+        <instruction>                        
+            Spread evenly into the prepared pan.                        
+        </instruction>
+        <instruction>                        
+            Bake for 25 minutes in the preheated oven.                         
+        </instruction>
+        <instruction>                        
+            Cool before cutting into squares.                        
+        </instruction>
+    </instructions>
+</recipe>

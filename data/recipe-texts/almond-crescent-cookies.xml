@@ -1,0 +1,53 @@
+<recipe>
+    <id>almond-crescent-cookies</id>
+    <title>Almond Crescent Cookies</title>
+    <ingredients>
+        <ingredient>
+            230 grams butter, room temperature
+        </ingredient>
+        <ingredient>
+            120 grams sugar
+        </ingredient>
+        <ingredient>
+            1 teaspoon vanilla extract
+        </ingredient>
+        <ingredient>
+            1 teaspoon almond extract
+        </ingredient>
+        <ingredient>
+            340 grams all-purpose flour
+        </ingredient>
+        <ingredient>
+            120 grams almond flour
+        </ingredient>
+        <ingredient>
+            30 grams powdered sugar
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            Beat the butter and the sugar together until light and fluffy.
+        </instruction>
+        <instruction>
+            Add the vanilla and almond extracts and mix.
+        </instruction>
+        <instruction>
+            Add the flour and almond flour. 
+        </instruction>
+        <instruction>
+            Mix thoroughly.
+        </instruction>
+        <instruction>
+            Take generous tablespoons of the dough (it will be slightly crumbly) and roll it into a small ball, about two cm in diameter, and then shape into a crescent shape.
+        </instruction>
+        <instruction>
+            Place onto a parchment paper lined baking sheet.
+        </instruction>
+        <instruction>
+            Bake at 175°C for 15 minutes.
+        </instruction>
+        <instruction>
+            Dust each cookie with powdered sugar.
+        </instruction>
+    </instructions>
+</recipe>

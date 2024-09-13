@@ -1,0 +1,71 @@
+<recipe>
+    <id>classic-potato-salad</id>
+    <title>Classic Potato Salad</title>
+    <ingredients>
+        <ingredient>                        
+            8 potatoes, cooked and diced                        
+        </ingredient>
+        <ingredient>                        
+            350 grams mayonnaise                        
+        </ingredient>
+        <ingredient>                        
+            2 tablespoons cider vinegar                        
+        </ingredient>
+        <ingredient>                        
+            2 tablespoons sugar                        
+        </ingredient>
+        <ingredient>                        
+            1 tablespoon yellow mustard                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon salt, divided                        
+        </ingredient>
+        <ingredient>                        
+            1 teaspoon garlic powder                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon pepper                        
+        </ingredient>
+        <ingredient>                        
+            2 celery ribs, sliced                        
+        </ingredient>
+        <ingredient>                        
+            50 grams onion, minced                        
+        </ingredient>
+        <ingredient>                        
+            5 hard-boiled eggs                        
+        </ingredient>
+        <ingredient>                        
+            1/2 teaspoon paprika                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Boil peeled potatoes in a pot with 500 ml of salted water.                         
+        </instruction>
+        <instruction>                        
+            Cool to room temperature.                        
+        </instruction>
+        <instruction>                        
+            Place diced potatoes in large bowl.                        
+        </instruction>
+        <instruction>                        
+            Mix mayonnaise, cider vinegar, sugar, mustard, salt, garlic powder, and pepper in another bowl.                        
+        </instruction>
+        <instruction>                        
+            Add to potatoes.                        
+        </instruction>
+        <instruction>                        
+            Add the feta cheese and olives.                        
+        </instruction>
+        <instruction>                        
+            Add celery and onions and mix well.                        
+        </instruction>
+        <instruction>                        
+            Stir in eggs.                        
+        </instruction>
+        <instruction>                        
+            Sprinkle a little paprika on top.                        
+        </instruction>
+    </instructions>
+</recipe>

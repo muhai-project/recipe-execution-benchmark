@@ -1,0 +1,6 @@
+#almond-crescent-cookies
+; only steps that have been recognized were tool fetches
+(get-kitchen ?kitchen)
+ 
+(fetch ?baking-tray ?ks-with-baking-tray ?kitchen baking-tray 1)
+(fetch ?baking-paper ?ks-with-baking-paper ?ks-with-baking-tray baking-paper 1)

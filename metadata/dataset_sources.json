@@ -1,0 +1,153 @@
+[
+    {
+        "recipe_id": "afghan-biscuits",
+        "source_url": "https://www.thespruceeats.com/afghan-biscuit-recipe-256048",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "almond-crescent-cookies",
+        "source_url": "https://www.simplyrecipes.com/recipes/almond_crescent_cookies",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "almond-crescent-cookies-2",
+        "source_url": "https://www.food.com/recipe/almond-crescent-cookies-424789",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "almond-crescent-cookies-3",
+        "source_url": "https://www.allrecipes.com/recipe/245336/almond-crescent-cookies",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "almond-crescent-cookies-4",
+        "source_url": "https://www.cooks.com/recipe/3144r3hg/almond-crescent-cookies.html",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "almond-crescent-cookies-5",
+        "source_url": "https://www.thespruceeats.com/german-almond-crescent-cookies-recipe-1446772",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "avocado-chicken-salad",
+        "source_url": "https://www.simplyrecipes.com/recipes/avocado_chicken_salad",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "basic-chicken-salad",
+        "source_url": "https://www.allrecipes.com/recipe/8499/basic-chicken-salad",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "best-brownies",
+        "source_url": "https://www.allrecipes.com/recipe/25010/absolutely-best-brownies",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "bisquick-shortcake-biscuits",
+        "source_url": "https://www.simplyrecipes.com/recipes/bisquick_shortcake_biscuits",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "black-bean-and-sweet-potato-salad",
+        "source_url": "https://www.allrecipes.com/recipe/238162/vegan-black-bean-and-sweet-potato-salad",
+        "access_date": "14-11-2022"
+    }, 
+    {
+        "recipe_id": "black-bean-salad-2",
+        "source_url": "https://www.food.com/recipe/black-bean-salad-213207",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "black-bean-salad-3",
+        "source_url": "https://www.cooks.com/recipe/xw4fl847/black-bean-and-corn-salad.html",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "black-bean-salad-4",
+        "source_url": "https://www.thespruceeats.com/black-bean-and-mango-salad-recipe-3378314",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "black-bean-salad-5",
+        "source_url": "https://www.simplyrecipes.com/recipes/black_bean_salad",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "broccoli-salad",
+        "source_url": "https://www.food.com/recipe/broccoli-salad-10733",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "chocolate-cream-cheese-cupcakes",
+        "source_url": "https://www.food.com/recipe/chocolate-cream-cheese-cupcakes-87623",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "chocolate-fudge-cookies",
+        "source_url": "https://www.allrecipes.com/recipe/19259/chocolate-fudge-cookies",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "classic-greek-salad",
+        "source_url": "https://www.thespruceeats.com/classic-greek-salad-3964419",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "classic-potato-salad",
+        "source_url": "https://www.food.com/recipe/classic-potato-salad-22747",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "coconut-tuiles",
+        "source_url": "https://www.simplyrecipes.com/recipes/coconut_tuiles",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "cole-slaw",
+        "source_url": "https://www.cooks.com/recipe/r80079ed/cole-slaw.html",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "cranberry-fluff-salad",
+        "source_url": "https://www.cooks.com/recipe/ex37q4om/cranberry-fluff-salad.html",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "croutons-vinegar-salad",
+        "source_url": "https://www.thespruceeats.com/basic-tossed-salad-with-homemade-croutons-3959138",
+        "access_date": "14-11-2022"
+    },   
+    {
+        "recipe_id": "cucumber-slices-with-dill",
+        "source_url": "https://www.allrecipes.com/recipe/18304/cucumber-slices-with-dill",
+        "access_date": "14-11-2022"
+    }, 
+    {
+        "recipe_id": "easy-banana-bread",
+        "source_url": "https://www.cooks.com/recipe/il0tt9uq/easy-banana-bread.html",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "easy-cherry-tomato-corn-salad",
+        "source_url": "https://www.allrecipes.com/recipe/234759/easy-cherry-tomato-corn-salad",
+        "access_date": "14-11-2022"
+    }, 
+    {
+        "recipe_id": "easy-oatmeal-cookies",
+        "source_url": "https://www.allrecipes.com/recipe/9627/easy-oatmeal-cookies",
+        "access_date": "14-11-2022"
+    },
+    {
+        "recipe_id": "mexican-wedding-cookies",
+        "source_url": "https://www.food.com/recipe/mexican-wedding-cookies-8278",
+        "access_date": "21-11-2022"
+    },
+    {
+        "recipe_id": "whole-wheat-ginger-snaps",
+        "source_url": "https://www.allrecipes.com/recipe/79512/whole-wheat-ginger-snaps",
+        "access_date": "14-11-2022"
+    }
+]
+

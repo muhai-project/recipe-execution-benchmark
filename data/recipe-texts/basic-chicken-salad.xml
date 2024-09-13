@@ -1,0 +1,41 @@
+<recipe>
+    <id>basic-chicken-salad</id>
+    <title>Best Chicken Salad</title>
+    <ingredients>
+        <ingredient>                        
+            140 grams almonds                        
+        </ingredient>
+        <ingredient>                        
+            230 grams mayonnaise                        
+        </ingredient>
+        <ingredient>                        
+            1 tablespoon lemon juice                        
+        </ingredient>
+        <ingredient>                        
+            1/4 teaspoon ground black pepper                        
+        </ingredient>
+        <ingredient>                        
+            150 g cooked chicken meat, chopped                        
+        </ingredient>
+        <ingredient>                        
+            1 stalk celery, chopped                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Place almonds in a frying pan.                         
+        </instruction>
+        <instruction>                        
+            Toast over medium-high heat.                         
+        </instruction>
+        <instruction>                        
+            Watch carefully, as they burn easily.                        
+        </instruction>
+        <instruction>                        
+            Mix together mayonnaise, lemon juice, and pepper in a medium bowl.                        
+        </instruction>
+        <instruction>                        
+            Toss with chicken, toasted almonds, and celery.                        
+        </instruction>
+    </instructions>
+</recipe>

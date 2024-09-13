@@ -1,0 +1,68 @@
+<recipe>
+    <id>almond-crescent-cookies-2</id>
+    <title>Almond Crescent Cookies</title>
+    <ingredients>
+        <ingredient>
+			230 grams unsalted butter, room temperature
+        </ingredient>
+        <ingredient>
+			200 grams granulated sugar
+        </ingredient>
+        <ingredient>
+			1 teaspoon vanilla extract
+        </ingredient>
+        <ingredient>
+			2 teaspoons almond extract
+        </ingredient>
+        <ingredient>
+			280 grams all-purpose flour
+        </ingredient>
+        <ingredient>
+			120 grams almond flour
+        </ingredient>
+        <ingredient>
+			30 grams powdered sugar
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            Preheat oven to 175 degrees C.
+        </instruction>
+        <instruction>
+            Grease cookie sheet.
+        </instruction>
+        <instruction>
+            With a mixer, beat the butter with sugar until light and fluffy.
+        </instruction>
+        <instruction>
+            Add vanilla extract and almond extract, beat until incorporated.
+        </instruction>
+        <instruction>
+            Stir in the flour and almonds.
+        </instruction>
+        <instruction>
+            Work flour mixture into a firm dough.			
+        </instruction>
+        <instruction>			
+            Working with 1 tablespoon of dough at a time, lightly roll and then shape it into a ball. 			
+        </instruction>
+        <instruction>			
+            Bend dough log into a crescent shape.			
+        </instruction>
+        <instruction>			
+            Place on greased cookie sheets and repeat until all dough is used.			
+        </instruction>
+        <instruction>			
+            Bake 12 minutes.			
+        </instruction>
+        <instruction>			
+            Sift powdered sugar into a small bowl.			
+        </instruction>
+        <instruction>			
+            While the cookies are still warm, dip the crescents in the powdered sugar.			
+        </instruction>
+        <instruction>			
+            Cool on racks.			
+        </instruction>
+    </instructions>
+</recipe>

@@ -1,0 +1,53 @@
+<recipe>
+    <id>bisquick-shortcake-biscuits</id>
+    <title>Bisquick Shortcake Biscuits</title>
+    <ingredients>
+        <ingredient>                        
+            300 grams Bisquick baking mix                        
+        </ingredient>
+        <ingredient>                        
+            3 tablespoons butter                        
+        </ingredient>
+        <ingredient>
+            3 tablespoons coconut-oil                        
+        </ingredient>
+        <ingredient>                        
+            250 ml milk                        
+        </ingredient>
+        <ingredient>                        
+            3 tablespoons sugar                        
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>                        
+            Heat oven to 220°C.                        
+        </instruction>
+        <instruction>                        
+            Whisk together the baking mix and sugar in a medium bowl.                          
+        </instruction>
+        <instruction>                        
+            Stir in the milk and coconut oil.                        
+        </instruction>
+        <instruction>                        
+            Don't over-mix!                        
+        </instruction>
+        <instruction>                        
+            Grease a cookie sheet with butter.                         
+        </instruction>
+        <instruction>                        
+            Divide the dough into roughly 6 equal portions and drop them on the cookie sheet.                        
+        </instruction>
+        <instruction>                        
+            Bake at 220°C for 10 minutes.                         
+        </instruction>
+        <instruction>                        
+            Cool for 5 minutes on a rack.                        
+        </instruction>
+        <instruction>                        
+            Slice with a bread knife to serve for shortcake.                         
+        </instruction>
+        <instruction>                        
+            It goes well with berries.                        
+        </instruction>
+    </instructions>
+</recipe>
